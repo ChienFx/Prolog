@@ -1,0 +1,16 @@
+Prolog
+- Là ngôn ngữ lập trình theo logic, được thiết kế bởi Alain Colmerauer và Robert Kowalski, được chính thức ra mắt từ năm 1972. Prolog được sử dụng nhiều trong các ứng dụng của trí tuệ nhân tạo và ngôn ngữ học trong khoa học máy tính, đặc biệt là xử lí ngôn ngữ tự nhiên. Prolog giúp người con người mô tả lại bài toán trên ngôn ngữ của logic, dựa trên đó máy tính sẽ tiến hành suy diễn tự động dựa vào nhũng cơ chế suy diễn có sẵn để tim ra câu trả lời thay vì phải cố gắng mô tả cách giải quyết một bài toán trên máy tính nhờ vậy mà sẽ tận dụng tốt khả năng tính toán của máy tính.
+
+- Cấu trúc chương trình Prolog:
+Một chương trình Prolog bao gồm các luật được viết dưới dạng mệnh đề Horn có dạng: Head:-Body, trong đó Head là một vị từ logic, Body có thể là rỗng hoặc là một tập các vị từ logic.
+Ex: odd(x): x mod 2 = 1
+
+
+-------
+Tìm hiểu một môi trường lập trình Prolog. Viết báo cáo về cách thức triển khai
+ngôn ngữ Prolog trên công cụ đã tìm hiểu. Trình bày ít nhất 5 ví dụ minh họa.
+Môi trường gợi ý: SWI-Prolog (http://www.swi-prolog.org)
+Khuyến khích sử dụng nhiều hình ảnh và ví dụ minh họa. Báo cáo tối thiểu 05 trang,
+định dạng trang tuân theo quy định đồ án.
+
+
