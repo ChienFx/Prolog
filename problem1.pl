@@ -30,7 +30,7 @@ divorced('Princess Anne', 'Captain Mark Phillips').
 divorced('Sarah Ferguson', 'Prince Andrew').
 divorced('Prince Andrew', 'Sarah Ferguson').
 
-%Parent
+%parent
 parent('Queen Elizabeth II', 'Prince Charles').
 parent('Queen Elizabeth II', 'Princess Anne').
 parent('Queen Elizabeth II', 'Prince Andrew').
@@ -52,8 +52,8 @@ parent('Princess Anne', 'Peter Phillips').
 parent('Princess Anne', 'Zara Phillips').
 
 parent('Sarah Ferguson', 'Princess Beatrice').
-parent('Sarah Ferguson', 'Princess Beatrice').
-parent('Prince Andrew', 'Princess Eugenie').
+parent('Sarah Ferguson', 'Princess Eugenie').
+parent('Prince Andrew', 'Princess Beatrice').
 parent('Prince Andrew', 'Princess Eugenie').
 
 parent('Sophie Rhys-jones', 'James Viscount Severn').
@@ -90,9 +90,9 @@ male('Prince George').
 
 %female
 female('Queen Elizabeth II').
-female('Prince Diana').
+female('Princess Diana').
 female('Camilla Parker Bowles').
-female('Prince Anne').
+female('Princess Anne').
 female('Sarah Ferguson').
 female('Sophie Rhys-jones').
 female('Kate Middleton').
@@ -105,3 +105,39 @@ female('Princess Charlotte').
 female('Savannah Phillips').
 female('Isla Phillips').
 female('Mia Grace Tindall').
+
+
+%Clauses
+husband(Person, Wife):-married(Person, Wife), male(Person).
+
+wife(Person, Husband):-married(Person, Husband), female(Person).
+
+father(Parent, Child):-parent(Parent, Child), male(Parent).
+
+mother(Parent, Child):-parent(Parent, Child), female(Parent).
+
+child(Child, Parent):-parent(Parent, Child).
+
+son(Child, Parent):-child(Child, Parent), male(Child).
+
+daughter(Child, Parent):-child(Child, Parent), female(Child).
+
+grandparent(GP, GC):-parent(GP, X), parent(X, GC).
+
+grandmother(GM, GC):-female(GM), parent(GM, X), parent(X, GC).
+
+grandfather(GF, GC):-male(GF), parent(GF, X), parent(X, GC).
+
+grandchild(GC, GP):-grandparent(GP, GC).
+
+grandson(GS, GP):-grandparent(GP, GS), male(GS).
+
+granddaughter(GD, GP):-grandparent(GP, GD), female(GD).
+
+%Khong dung parent vi se lap lai truong hop cua mother va father
+sibling(Person1, Person2):-mother(X, Person1), mother(X, Person2), father(Y, Person1), father(Y, Person2), not(Person1=Person2).
+
+
+brother(Person, Sibling):-sibling(Person, Sibling), male(Person).
+
+sister(Person, Sibling):-sibling(Person, Sibling), female(Person).
