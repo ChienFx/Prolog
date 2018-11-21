@@ -1,0 +1,23 @@
+%Query test Problem 1
+mother(Mother, 'Prince Charles').
+divorced('Prince Charles', Who).
+son(Sons, 'Kate Middleton').
+daughter(Who, 'Prince Phillip').
+sibling('Princess Anne', Who).
+daughter('Mia Grace Tindall', 'Mike Tindall').
+grandfather(Who, 'Isla Phillips').
+aunt('Zara Phillips', 'Prince George').
+niece(Who,'Zara Phillips').
+father('Prince Edward', 'Princess Beatrice').
+uncle('Prince Edward', 'Princess Beatrice').
+grandmother('Princess Anne', Who).
+sister('Kate Middleton', 'Prince Harry').
+brother('Prince Harry', Who).
+granddaughter('Princess Charlotte', 'Camilla Parker Bowles').
+grandmother(Who, 'Princess Charlotte').
+grandson('Prince George', 'Prince Charles').
+sister('Isla Phillips', Who).
+nephew(Who, 'Prince Andrew').
+husband(Who, 'Princess Anne').
+grandfather('Prince Edward', Who).
+grandparent(Who, 'Autumn Kelly').

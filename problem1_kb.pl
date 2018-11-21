@@ -141,3 +141,17 @@ sibling(Person1, Person2):-mother(X, Person1), mother(X, Person2), father(Y, Per
 brother(Person, Sibling):-sibling(Person, Sibling), male(Person).
 
 sister(Person, Sibling):-sibling(Person, Sibling), female(Person).
+
+%Khong tinh  sister-in-law
+aunt(Person, NieceNephew):-female(Person), sibling(Person, X), parent(X, NieceNephew).
+
+%Khong tinh brother-in-law
+uncle(Person, NieceNephew):-male(Person), sibling(Person, X), parent(X, NieceNephew).
+
+niece(Person, AuntUncle):-female(Person), parent(X, Person), sibling(X, AuntUncle).
+
+nephew(Person, AuntUncle):-male(Person), parent(X, Person), sibling(X, AuntUncle).
+
+
+
+
