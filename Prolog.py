@@ -36,8 +36,8 @@ def ParseHead(predicate):
     if len(data) == 1:
         return result
 
-    result.args = ParseArgs(data[1])
-    '''
+    #result.args = ParseArgs(data[1])
+    
     args = (data[1].split(')')[0]).split(',')
     for i in range(len(args)):
         args[i] = args[i].rstrip()
@@ -46,7 +46,7 @@ def ParseHead(predicate):
             args[i] = ParseHead(args[i])
     if args != []:
         result.args = args
-    '''
+    
     return result
 
 def ParseArgs(args):
