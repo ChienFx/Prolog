@@ -1,0 +1,77 @@
+01. Ai la me cua Prince Charles?
+Queen Elizabeth II
+
+02. Prince Charles da ly hon voi ai?
+Princess Diana
+
+03. Ai la con trai cua Kate Middeton?
+Prince George
+
+
+06. Mia Grace co phai la con gai cua Mile Tindall không?
+true
+
+07. Ai la ong cua Isla Phillips ?
+Captain Mark Phillips
+
+08. Zara Phillips cco phai co/di cua Prince George khong?
+false
+
+09. Zara Phillips cco nhung dua chau gai nao?
+Savannah Phillips
+Isla Phillips
+
+
+10. Prince Edward co phai la cha cua Princess Beatrice không?
+false
+
+11. Prince Edward co phai la chu cua Prince Beatrice không ?
+true
+
+13. Kate Middleton co phai la chi/em Prince Harry không?
+false
+
+14. Ai la anh/em trai cua Prince Harry?
+Prince William
+
+15. Princess Charlotte co phai la chau gai cua Camilla Parker Bowles không?
+false
+
+16. Ai la ba` cua Princess Charlotte?
+Princess Diana
+
+
+18. Ai la chi/em gai cua Isla Phillips?
+Savannah Phillips
+
+
+18. Ai la chi/em gai cua Isla Phillips?
+Savannah Phillips
+
+
+23. Nhung ai chua co gia dinh?
+Prince Harry
+James Viscount Severn
+Prince George
+Princess Beatrice
+Princess Eugenie
+Lady Louise Mountbatten-Windsor
+Princess Charlotte
+Savannah Phillips
+Isla Phillips
+Mia Grace Tindall
+
+
+24. Nhung ba me nao co dung 2 con?
+Princess Diana
+Princess Anne
+Sarah Ferguson
+Sophie Rhys-jones
+Kate Middleton
+Autumn Kelly
+
+
+25. Nhung cap vo chong nao chua co con?
+Camilla Parker Bowles - Prince Charles
+Timothy Laurence - Princess Anne
+
